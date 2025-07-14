@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import "tailwindcss";
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 1em 0;
+}
+.title{
+    font-family: "Indie Flower", Josefin-sans;
+    color: white;
+    border-bottom: 3px solid white;
+    padding-inline: 25px;
+}
+.gameover-txt{
+    font-family: "Indie Flower", Josefin-sans;
+    border: 2px dashed white;
+    color: orangered;
+}
+.board{
+    overflow: hidden;
+    background: hsl(0, 0%, 100%, 0.5);
+    box-shadow: 3px 3px 5px 0 hsl(240, 50%, 50%);
+}
+.X-hover:hover::after{
+    width: 100%;
+    height: 100%;
+    content: "X";
+    opacity: 0.4;
+    font-size: 5rem;
+    color: blue;
+    background-color: white;
+    text-align: center;
+}
+.O-hover:hover::after{
+    content: "O";
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    font-size: 5rem;
+    color: hsl(30, 100%, 50%);
+    background-color: white;
+    text-align: center;
+}
